@@ -1,25 +1,35 @@
-var express = require('express')
-var path = require('path')
-var cookieParser = require('cookie-parser')
-var logger = require('morgan')
+const express = require('express')
+const app = express()
+const path = require('path')
 const port = process.env.PORT || 8080
 
-var indexRouter = require('./routes/index')
-var bossRouter = require('./routes/boss')
+const {bosses} = require('./public/data/bosses')
+// const allbosses = require('./public/scripts/allbosses')
+// const singleboss = require('./public/scripts/singleboss')
 
-var app = express()
+app.use(express.static('./public'))
 
-app.use(logger('dev'))
-app.use(express.json())
-app.use(express.urlencoded({ extended: false }))
-app.use(cookieParser())
-app.use(express.static(path.join(__dirname, 'public')))
-
-app.use('/', indexRouter)
-app.use('/boss', bossRouter)
-
-app.listen(port, () => {
-  console.log(`listening on port ${port}`)
+app.get('/', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './index.html'))
 })
 
-module.exports = app
+app.get('/data/bosses', (req, res) => {
+  const bossesData = bosses.map((boss) => {
+    const { id, name, health, image, location, description } = boss
+    return { id, name, health, image, location, description }
+  })
+
+  res.json(bossesData)
+})
+
+app.get('/boss/:bossID', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './public/pages/boss.html'))
+})
+
+app.get('*', (req, res) => {
+  res.status(404).send('<h1>Page Not Found</h1>')
+})
+
+app.listen(port, () => {
+  console.log(`listening at ${port}/`)
+})
