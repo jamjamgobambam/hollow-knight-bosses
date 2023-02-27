@@ -27,7 +27,7 @@ app.get('/boss/:bossID', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-  res.status(404).send('<h1>Page Not Found</h1>')
+  res.sendFile(path.resolve(__dirname, './public/pages/pagenotfound.html'))
 })
 
 app.listen(port, () => {
