@@ -15,8 +15,8 @@ function populateBoss(bosses) {
 
   myImage.src = result.image
   myH2.textContent = result.name
-  myPara1.textContent = `Health: ${result.health}`
-  myPara2.textContent = `Location: ${result.location}`
+  myPara1.innerHTML = `<strong>Health:</strong> ${result.health}`
+  myPara2.innerHTML = `<strong>Location:</strong> ${result.location}`
   myPara3.textContent = result.description
   myPara3.className = "boss-info-description"
 
