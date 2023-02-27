@@ -1,1 +1,154 @@
 @import url("https://unpkg.com/@picocss/pico@1.*/css/pico.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --font-family: Lato, Verdana, sans-serif;
+    background-color: rgb(28, 37, 64);
+}
+
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+    --primary: rgb(166, 143, 164);
+    --primary-hover: rgb(28, 37, 64);
+    --primary-focus: rgb(13, 13, 13);
+    --primary-inverse: #FFF;
+}
+
+[data-theme="dark"] {
+    -primary: rgb(166, 143, 164);
+    --primary-hover: rgb(28, 37, 64);
+    --primary-focus: rgb(13, 13, 13);
+    --primary-inverse: #FFF;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* banner and header */
+
+header {
+    background-image: url("https://64.media.tumblr.com/77616385fc1d6705126c6b21ecc9fbe5/tumblr_pex178fsYq1x73yfbo1_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+    height: 400px;
+    border-bottom: 2px solid black;
+}
+
+.heading-container {
+    position: absolute;
+    top: 50px;
+    background-color: rgba(13, 13, 13, 0.3);
+    color: white;
+    align-items: center;
+    padding: 50px;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px black;
+}
+
+header p {
+    font-style: italic;
+    color: white;
+}
+
+/* card content */
+
+article {
+    background-color: rgb(191, 195, 217);
+    width: 350px;
+    height: 350px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    padding: 40px 30px 30px 40px;
+    border: 1px solid rgb(13, 13, 13);
+}
+
+article img {
+    height: 90px;
+    width: auto;
+}
+
+article h3 {
+    color: rgb(86, 81, 115);
+    margin-bottom: 0px;
+    padding-left: 10px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+article p {
+    font-size: 0.7em;
+    font-style: italic;
+    padding-left: 10px;
+    color: black;
+}
+
+[role=button] {
+    height: 70px;
+    align-self: center;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: 0.3s
+}
+
+[role=button]:hover {
+    border: 2px solid black;
+}
+
+/* single boss content */
+
+.boss-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:rgb(166, 143, 164);
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 40px;
+    width: 60%;
+}
+
+.boss-info img {
+    width: 200px;
+    height: auto;
+    grid-row: span 4;
+}
+
+.boss-info p {
+    color: black;
+}
+
+.boss-info-description {
+    font-style: italic;
+}
+
+.boss-info h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+}
