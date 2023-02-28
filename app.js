@@ -4,8 +4,6 @@ const path = require('path')
 const port = process.env.PORT || 8080
 
 const {bosses} = require('./public/data/bosses')
-// const allbosses = require('./public/scripts/allbosses')
-// const singleboss = require('./public/scripts/singleboss')
 
 app.use(express.static('./public'))
 
