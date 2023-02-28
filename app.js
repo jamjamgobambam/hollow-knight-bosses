@@ -3,25 +3,16 @@ const app = express()
 const path = require('path')
 const port = process.env.PORT || 8080
 
-const {bosses} = require('./public/data/bosses')
+const dataRouter = require('./routes/data')
+const bossesRouter = require('./routes/boss')
 
-app.use(express.static('./public'))
+app.use(express.static('public'))
+
+app.use('/data/bosses', dataRouter)
+app.use('/boss', bossesRouter)
 
 app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, './index.html'))
-})
-
-app.get('/data/bosses', (req, res) => {
-  const bossesData = bosses.map((boss) => {
-    const { id, name, health, image, location, description } = boss
-    return { id, name, health, image, location, description }
-  })
-
-  res.json(bossesData)
-})
-
-app.get('/boss/:bossID', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './public/pages/boss.html'))
 })
 
 app.get('*', (req, res) => {
