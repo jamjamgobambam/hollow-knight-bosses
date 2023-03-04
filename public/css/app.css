@@ -80,6 +80,15 @@ header p {
     color: white;
 }
 
+.page-not-found {
+    display: block;
+    text-align: center;
+}
+
+.page-not-found p {
+    color: white;
+}
+
 /* card content */
 
 article {

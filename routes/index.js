@@ -3,11 +3,11 @@ const indexRouter = express.Router()
 const path = require('path')
 
 indexRouter.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './index.html'))
+    res.sendFile(path.resolve('./index.html'))
 })
 
 indexRouter.all('*', (req, res) => {
-    res.status(404).send('page not found')
-})
+    res.status(404).sendFile(path.resolve('./public/pages/404.html'))
+  })
 
 module.exports = indexRouter

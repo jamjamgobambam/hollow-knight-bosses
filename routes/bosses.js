@@ -9,7 +9,7 @@ bossesRouter.get('/data', (req, res) => {
 })
 
 bossesRouter.get('/:bossId', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../public/pages/boss.html'))
+    res.sendFile(path.resolve('../public/pages/boss.html'))
 })
 
 module.exports = bossesRouter
