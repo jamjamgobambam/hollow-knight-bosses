@@ -1,0 +1,50 @@
+[
+    {
+        "id": "brokenvessel",
+        "name": "Broken Vessel",
+        "health": 525,
+        "image": "https://i.ytimg.com/vi/FVh9As4McHg/maxresdefault.jpg",
+        "location": "Ancient Basin",
+        "description": "The shape of this creature... I have seen something like it before. More than once, perhaps. It looks a little like the bugs of Hallownest, but not quite the same. Where did these empty little wanderers come from?"
+    },
+    {
+        "id": "crystalguardian",
+        "name": "Crystal Guardian",
+        "health": 280,
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4b368430-8d57-492e-bc0b-360ef75b19bd/df7btpo-b405685c-1f21-45ae-ae2d-ec2ccf9917ed.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRiMzY4NDMwLThkNTctNDkyZS1iYzBiLTM2MGVmNzViMTliZFwvZGY3YnRwby1iNDA1Njg1Yy0xZjIxLTQ1YWUtYWUyZC1lYzJjY2Y5OTE3ZWQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.v0Ld-ubRZSjy9vAbVd0F2mvUm_ObG46xEsWW25NSiDM",
+        "location": "Crystal Peak",
+        "description": "How does the world look to this creature, gazing out from within its crystal prison? Does it see only light? Is that what drives it into a frenzy?"
+    },
+    {
+        "id": "falseknight",
+        "name": "False Knight",
+        "health": 355,
+        "image": "https://art.ngfiles.com/images/1172000/1172673_theicaruscrisis_the-false-knight.png?f1581617746",
+        "location": "Forgotten Crossroads",
+        "description": "Weak creatures love to steal the strength of others. Their lives are brief and fearful, and they yearn to have the power to dominate those who have dominated them."
+    },
+    {
+        "id": "hollowknight",
+        "name": "Hollow Knight",
+        "health": 150,
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/346e9025-c13d-4fa6-a54c-4473b07ad42d/demgrrf-6828b638-a4d5-4c57-aac2-57eccfc20a08.jpg/v1/fill/w_1280,h_1008,q_75,strp/the_hollow_knight_boss_by_cooperhoeft_demgrrf-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwOCIsInBhdGgiOiJcL2ZcLzM0NmU5MDI1LWMxM2QtNGZhNi1hNTRjLTQ0NzNiMDdhZDQyZFwvZGVtZ3JyZi02ODI4YjYzOC1hNGQ1LTRjNTctYWFjMi01N2VjY2ZjMjBhMDguanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.hVux5Lo0GQQBkU5iEo--s5UZrO8UBP3bp0BObLT-8P8",
+        "location": "Temple of the Black Egg",
+        "description": "The old King of Hallownest... he must have been desperate to save his crumbling little world. The sacrifices he imposed on others... all for nothing."
+    },
+    {
+        "id": "hornetprotector",
+        "name": "Hornet Protector",
+        "health": 225,
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8a7f53d6-5be3-4bb2-9d22-8829f9090ca4/deksudp-33d9b9b5-b9ef-46ee-96b8-6097d44cf128.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhhN2Y1M2Q2LTViZTMtNGJiMi05ZDIyLTg4MjlmOTA5MGNhNFwvZGVrc3VkcC0zM2Q5YjliNS1iOWVmLTQ2ZWUtOTZiOC02MDk3ZDQ0Y2YxMjguanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nquMjamdcri7cEQgx8IoJAMQXP01CUu_Z647bT9ylDc",
+        "location": "Greenpath",
+        "description": "I have seen this nimble little creature. I thought her prey and pounced at her, but with a flash she stabbed me with her flying stinger and darted away. Could she be... a Hunter?"
+    },
+    {
+        "id": "mantislords",
+        "name": "Mantis Lords",
+        "health": 530,
+        "image": "https://i.pinimg.com/originals/0b/1b/1a/0b1b1adb8550856395d18a379a9301e0.jpg",
+        "location": "Fungal Wastes",
+        "description": "The Mantis tribe and the bugs of old Hallownest had no love for each other. The Mantises outlived their rivals though, and their civilisation still stands."
+    }
+]

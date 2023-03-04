@@ -1,13 +1,13 @@
 const express = require('express')
-const path = require('path')
 const indexRouter = express.Router()
+const path = require('path')
 
 indexRouter.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './index.html'))
+    res.sendFile(path.resolve(__dirname, './index.html'))
 })
 
-indexRouter.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './public/pages/pagenotfound.html'))
+indexRouter.all('*', (req, res) => {
+    res.status(404).send('page not found')
 })
 
 module.exports = indexRouter
