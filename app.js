@@ -1,24 +1,17 @@
+require('dotenv').config({path: __dirname + '/.env'})
+
 const express = require('express')
 const app = express()
-const path = require('path')
-const port = process.env.PORT || 8080
+const port = process.env.PORT
 
-const dataRouter = require('./routes/data')
-const bossesRouter = require('./routes/boss')
+const indexRouter = require('./routes/index')
+const bossesRouter = require('./routes/bosses')
 
 app.use(express.static('public'))
 
-app.use('/data/bosses', dataRouter)
-app.use('/boss', bossesRouter)
-
-app.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './index.html'))
-})
-
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, './public/pages/pagenotfound.html'))
-})
+app.use('/bosses', bossesRouter)
+app.use('/', indexRouter)
 
 app.listen(port, () => {
-  console.log(`listening at ${port}/`)
+  console.log(`listening at http://localhost:${port}`)
 })
