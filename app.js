@@ -2,7 +2,7 @@ require('dotenv').config({path: __dirname + '/.env'})
 
 const express = require('express')
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT || 8080
 
 const indexRouter = require('./routes/index')
 const bossesRouter = require('./routes/bosses')
