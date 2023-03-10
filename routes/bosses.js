@@ -5,11 +5,11 @@ const path = require('path')
 const bossData = require('../data/bosses')
 
 bossesRouter.get('/data', (req, res) => {
-    res.json(bossData)
+    res.status(200).json(bossData)
 })
 
 bossesRouter.get('/:bossId', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../public/pages/boss.html'))
+    res.status(200).sendFile(path.resolve(__dirname, '../pages/boss.html'))
 })
 
 module.exports = bossesRouter

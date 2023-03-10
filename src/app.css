@@ -39,7 +39,7 @@ button:hover, [role=button]:hover {
 /* banner and header */
 
 header {
-  background-image: url("../assets/banner.jpg");
+  background-image: url("/public/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
